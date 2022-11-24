@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: arial;
+    font-weight: normal;
+    background-image: radial-gradient(circle, #f2e2f4 0%, #f0f9fb 100%);
+}
+.grid{
+    height: 95vh;
+    width: 380px;
+    background: #e5eaf5;
+    margin-left: 35%;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem rgb(218, 187, 233);
+    border: 3px solid rgb(240, 224, 248);
+    transition: 250ms;
+    cursor: pointer;
+    
+}
+h4,h5{
+    color: rgb(38, 37, 37);
+}
+.grid:hover{
+    background-color:#f4eef7;
+    transform: scale(1.04);
+}
+.grid .header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin: 1rem;
+}
+.grid .header h3,h4{
+    margin-top: 1rem;
+    font-family: sans-serif;
+    color:  rgb(38, 37, 37);
+}
+.grid .header h3{
+    --s: 0.15em;   /* the thickness of the line */
+    --c: #1095c1; /* the color */
+    
+    color:  rgb(38, 37, 37);;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#fff 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+}
+
+.grid .header h3:hover{
+    --_p: 100%
+}
+.grid .header h4 a{
+    text-decoration: none;
+    color: rgb(43, 35, 66);
+    transition: 1s;
+}
+.grid .header h4 a:hover{
+    text-decoration: underline;
+}
+.grid .middle-section{
+    display: flex;
+}
+.grid .middle-section img{
+    height: 35px;
+    overflow: hidden;
+    border: 1 px solid;
+    border-radius: 22px;
+    margin-left: 1rem;
+    box-shadow: 0 0.5rem 2rem rgb(240, 170, 249);
+
+}
+.grid .middle-section h4,h5{
+    margin-left: 1.5rem;
+    margin-top: 0;
+    transition: 0.5s;
+}
+.grid .middle-section h4{
+    transition: 0.5s;
+    position: relative;
+}
+.grid .middle-section h4:hover{
+    color:rgb(31, 26, 49);
+}
+.grid .middle-section h5{
+    color: grey;
+}
+.grid .lower-middle-section{
+    margin-left: 1.2rem;
+    
+}
+.grid .lower-middle-section img{
+    height: 35px;
+    width: 35px;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 2rem rgb(240, 170, 249);;
+}
+.grid .lower-middle-section  .content{
+    display: flex;
+}
+.grid .lower-middle-section  .content .time{
+    color: grey;
+}
+.grid .lower-middle-section  .content h5{
+    margin-top: 1rem;
+}
+.grid .lower-middle-section  .content a{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: grey;
+    
+}
+.grid .lower-middle-section  .content .comment{
+    display: flex;
+    font-weight: none;
+    color: grey;
+    transition: 2s;
+}
+.grid .lower-middle-section  .content .comment a:hover{
+    text-decoration: underline;
+}
